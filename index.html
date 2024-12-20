@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shut the Box</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="players">
+    <h2>Enter Player Names</h2>
+    <label for="player1Name">Player 1:</label>
+    <input type="text" id="player1Name" placeholder="Player 1 Name">
+    <label for="player2Name">Player 2:</label>
+    <input type="text" id="player2Name" placeholder="Player 2 Name">
+    <button id="startBtn">Start Game</button>
+  </section>
+
+  <section id="gameBoardSection">
+    <h2>Game Board</h2>
+    <div id="currentPlayerDisplay"></div>
+    <div id="currentRoundDisplay"></div>
+    <div id="dice">
+      <img id="die1" src="images/dice1.png" alt="Die 1">
+      <img id="die2" src="images/dice2.png" alt="Die 2">
+    </div>
+    <div id="buttons">
+      <button id="rollBtn">Roll</button>
+      <button id="individualBtn">Individual</button>
+      <button id="sumBtn">Sum</button>
+      <button id="endTurnBtn">End Turn</button>
+    </div>
+    <div id="boxes">
+      <!-- Boxes 1 to 9 -->
+      <div id="box1">1</div>
+      <div id="box2">2</div>
+      <div id="box3">3</div>
+      <div id="box4">4</div>
+      <div id="box5">5</div>
+      <div id="box6">6</div>
+      <div id="box7">7</div>
+      <div id="box8">8</div>
+      <div id="box9">9</div>
+    </div>
+  </section>
+
+  <section id="scorecard">
+    <h2>Scorecard</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Round</th>
+          <th>Player 1</th>
+          <th>Player 2</th>
+        </tr>
+      </thead>
+      <tbody id="scoreTbody"></tbody>
+    </table>
+  </section>
+
+  <section class="winner">
+    <h2>Winner</h2>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
